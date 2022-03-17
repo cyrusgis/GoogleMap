@@ -79,7 +79,7 @@ $(function() {
         icon: markerData[i].icon,
       });
   
-      infoWindow[i] = new google.maps.InfoWindow({ // Add info window
+      infoWindow[i] = new google.maps.InfoWindow({ // add info window
         content: '<div class="name">' + markerData[i]['title'] + '</div>'
       });
       
@@ -105,7 +105,7 @@ $(function() {
             if (status == google.maps.GeocoderStatus.OK) {
                 mapObj.setCenter(results[0].geometry.location);
             } else {
-                alert('Can't find address');
+                alert('Unable to locate address');
             }
         });
     }
